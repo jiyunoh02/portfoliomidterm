@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <!-- header section -->
     <header>
@@ -17,7 +19,6 @@
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#goal">ACTIVITIES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -25,24 +26,25 @@
         </nav>
     </header>
 
-    <!-- main section -->
+    <!-- main section & 個人基本資訊 section -->
     <section class="hero">
         <div class="hero-content">
             <h2> 你好！</h2>
             <h3>My name is <span class="name">Jiyun</span></h3>
-            <h3>I want to be a programmer who’s easy to talk to :)</h3>
-            </div>
-            <div class="go-btn">
-                <a href="#about">Go!</a>
-                <i class="fas fa-arrow-down"></i>
-            </div>
+            <h3>I like to make my idea in to result</h3>
+            <h3>I want to be a programmer who’s easy to work with :)</h3>
+        </div>
+        <div class="go-btn">
+            <a href="#about">Go!</a>
+            <i class="fas fa-arrow-down"></i>
+        </div>
         </div>
     </section>
 
-    <!-- ABOUT section -->
+   
     <section id="about" class="about">
         <h2 class="section-title">ABOUT</h2>
-        
+
         <div class="about-container">
             <div class="profile-card">
                 <div class="profile-img">
@@ -55,7 +57,9 @@
                     <p><i class="fas fa-map-marker-alt"></i> Zhongli, Taoyuan</p>
                 </div>
             </div>
-            
+
+            <!--個人專業與技能 section-->
+
             <div class="info-container">
                 <div class="info-section">
                     <h3>EDUCATION</h3>
@@ -66,46 +70,88 @@
                         <p>2023 - </p>
                     </div>
                 </div>
-                
+
                 <div class="info-section">
                     <h3>LANGUAGE SKILLS</h3>
                     <div class="info-content">
-                        <p>Korean 100%</p>
-                        <p>English 80%</p>
-                        <p>Chinese 30%</p>
+                        <div class="skill">
+                            <span>Korean 100%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>English 80%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Chinese 30%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="info-section">
                     <h3>PROGRAMMING SKILLS </h3>
                     <div class="info-content">
-                        <p>Java 70%</p>
-                        <p>Python 60%</p>
-                        <p>C++ 60%</p>
-                        <p>Swift 60%</p>
-                        <p>Dart 50%</p>
-                    </div>
-                </div>
-                
-                <div class="info-section">
-                    <h3>DESIGN SKILLS </h3>
-                    <div class="info-content">
-                        <p>Figma 50%</p>
-                        <p>Adobe XD 30%</p>
-                        <p>Photoshop 30%</p>
+                        <div class="skill">
+                            <span>Java 60%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python 50%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Swift 50%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-            
-                
+                <div class="info-section">
+                    <h3>DESIGN SKILLS </h3>
+                    <div class="info-content">
+                        <div class="skill">
+                            <span>Figma 50%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Adobe XD 30%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Photoshop 30%</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                </div>
+
+
+
             </div>
         </div>
     </section>
 
-    <!-- GOAL 섹션 -->
+    <!-- 個人經歷 section -->
     <section id="goal" class="goal">
         <h2 class="section-title">ACTIVITIES</h2>
-        
+
         <div class="goal-container">
             <div class="goal-card">
                 <div class="goal-header">
@@ -120,13 +166,15 @@
                     <p>Duration: May 2023 - August 2023</p>
                     <br>
                     <p>Assisted the marketing team with campaign planning and content research.
-                    Gained hands-on experience in sports marketing and fan engagement strategies.
-                    Supported team operations and contributed to social media content ideas.
-                    Collaborated with team members during brainstorming and weekly meetings.</p>
+                        Gained hands-on experience in sports marketing and fan engagement strategies.
+                        Supported team operations and contributed to social media content ideas.
+                        Collaborated with team members during brainstorming and weekly meetings. 
+                        <br><br>
+                        <a href="https://drive.google.com/drive/folders/1Uw7shYIC-10cV6njdegFR_BiV1xIBr9O?usp=drive_link" target="_blank" style="color: #4285F4;">View Project</a></p>
                 </div>
             </div>
 
-            
+
             <div class="goal-card">
                 <div class="goal-header">
                     <h3>Asan Doers Startup Competiton</h3>
@@ -139,12 +187,16 @@
                     <br>
                     <p>Duration: June 2024 - August 2024</p>
                     <br>
-                    <p>Led the marketing strategy for our early-stage startup team, focusing on user research and digital branding.
-                    Built and launched the landing page using HTML, CSS, and JavaScript to showcase our product.
-                    Strengthened development skills by designing the app's main interface and connecting APIs to display dynamic user data. </p>
+                    <p>Led the marketing strategy for our early-stage startup team, focusing on user research and
+                        digital branding.
+                        Built and launched the landing page using HTML, CSS, and JavaScript to showcase our product.
+                        Strengthened development skills by designing the app's main interface and connecting APIs to
+                        display dynamic user data.
+                        <br><br>
+                        <a href="https://dittoplus2.imweb.me/?redirect=no" target="_blank" style="color: #4285F4;">View Project</a> </p>
                 </div>
             </div>
-            
+
             <div class="goal-card">
                 <div class="goal-header">
                     <h3>LG GreenValue Youth Global Team</h3>
@@ -157,18 +209,24 @@
                     <br>
                     <p>Duration: April 2025 - </p>
                     <br>
-                    <p>Founded and currently lead a youth team focused on sustainability and green innovation. Organized project planning, delegated tasks, and facilitated communication among international team members.
-                    Developed proposals and led presentations for LG’s sustainability initiatives.
-                    Coordinated with LG mentors to align our projects.</p>
+                    <p>Founded and currently lead a youth team focused on sustainability and green innovation. Organized
+                        project planning, delegated tasks, and facilitated communication among international team
+                        members.
+                        Developed proposals and led presentations for LG’s sustainability initiatives.
+                        Coordinated with LG mentors to align our projects.
+                        <br><br>
+                        <a href="https://drive.google.com/file/d/1V_8Pw9yiULrNqZLiCDMAqHqYYpTNlc_a/view?usp=drive_link" target="_blank" style="color: #4285F4;">View Project</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 푸터 섹션 -->
+    <!-- 聯絡資訊 section -->
     <footer>
         <div class="social-links">
-            <a href="https://www.instagram.com/ozzz._.jiyun?igsh=MWtqZTYxM3RoNmRwag%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:jiyun@cycu.org.tw"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/ozzz._.jiyun?igsh=MWtqZTYxM3RoNmRwag%3D%3D&utm_source=qr"><i
+                    class="fab fa-instagram"></i></a>
             <a href="https://line.me/ti/p/bwM4sv6maH"><i class="fab fa-line"></i></a>
         </div>
         <div class="footer-logo">
@@ -178,4 +236,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
